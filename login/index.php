@@ -1,3 +1,6 @@
+<?php
+    $user = $_REQUEST['user'];
+?>
 <html>
 <head>
     <meta charset="utf-8">
@@ -46,7 +49,7 @@
 <body>
     <div class="well well-lg">
         <div class="container-fluid">
-            <a class="btn btn-lg" href="../index.html" id="title"> NRP Fitness Club</a> <span style="font-family: 'Cardo', serif;" class="label label-info">Login</span>
+            <a class="btn btn-lg" href="../index.html" id="title"> NRP Fitness Club</a> <span style="font-family: 'Cardo', serif;" class="label label-info"><?php if($user == 'admin')echo "Admin Login"; else echo "Login";?></span>
         </div>
     </div>
     
@@ -81,11 +84,13 @@
 
                 </div>
             </div>
-			
-			<div class="panel panel-default">
-				<center>
-				Or </br><p> Don't have a account?<div class="btn btn-link"><a href="#" >Sign Up</a></div></p></center>
-			</div>
+            
+            <?php
+                if($user == "member")
+                    echo "<div class='panel panel-default'>
+                            <center>Or </br><p> Don't have a account?<div class='btn btn-link'><a href='../SignUp' >Sign Up</a></div></p></center>
+                        </div>";
+            ?>
         </div>
    
     <nav class="navbar navbar-inverse navbar-bottom">

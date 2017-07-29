@@ -49,11 +49,7 @@
 <body>
     <div class="well well-lg">
         <div class="container-fluid">
-<<<<<<< HEAD:login/index.php
             <a class="btn btn-lg" href=".." id="title"> NRP Fitness Club</a> <span style="font-family: 'Cardo', serif;" class="label label-info"><?php if($user == 'admin')echo "Admin Login"; else echo "Login";?></span>
-=======
-            <a class="btn btn-lg" href="../index.html" id="title"> NRP Fitness Club</a> <span style="font-family: 'Cardo', serif;" class="label label-info"><?php if($user == 'admin')echo "Admin Login"; else echo "Login";?></span>
->>>>>>> fd0e3734d0524e36588d8744b782b752268bc40f:login/index.php
         </div>
     </div>
     
